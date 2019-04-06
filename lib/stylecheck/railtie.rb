@@ -4,8 +4,8 @@ module Stylecheck
   # auto loading rake tasks
   class Railtie < Rails::Railtie
     rake_tasks do
-      rake_path = File.join(File.dirname(__FILE__), '../tasks/*.rake')
-      Dir[rake_path].each { |f| load f }
+      rake_task_paths = File.expand_path('lib/tasks/*.rake', __dir__)
+      Dir[rake_task_paths].each { |f| load f }
     end
   end
 end
