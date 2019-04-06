@@ -1,5 +1,8 @@
 # frozen_string_literal: true
 
+require 'stylecheck/rubocop_helpers'
+require 'stylecheck/railtie' if defined?(Rails)
+
 module Stylecheck
   class << self
     def root
@@ -7,6 +10,3 @@ module Stylecheck
     end
   end
 end
-
-require 'stylecheck/rubocop_helpers'
-require 'stylecheck/railtie' if defined?(Rails)
