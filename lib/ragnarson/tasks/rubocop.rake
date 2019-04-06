@@ -4,21 +4,9 @@ require "fileutils"
 namespace :style do
   namespace :rubocop do
     desc "Run RuboCop with auto_correct"
-    task :with_auto_correct do
-      options = ["--rails", "--auto-correct"]
-      options += ["--fail-level", "refactor"]
-      options += ["-c", Ragnarson::Stylecheck::RubocopHelpers.config]
-      sh "bundle exec rubocop #{options.join(" ")}" do |ok, _res|
-        abort "Fix code style errors" unless ok
-      end
-    end
-
-    desc "Run RuboCop without auto_correct"
-    task :without_auto_correct do
-      options = ["--rails"]
-      options += ["--fail-level", "refactor"]
-      options += ["--display-cop-names"]
-      options += ["-c", Ragnarson::Stylecheck::RubocopHelpers.config]
+    task :run, [:with_autocorrect] do |t, with_autocorrect|
+      options = ["-DRES", "-c", Ragnarson::Stylecheck::RubocopHelpers.config]
+      options << "--safe-auto-correct" if with_autocorrect
       sh "bundle exec rubocop #{options.join(" ")}" do |ok, _res|
         abort "Fix code style errors" unless ok
       end
@@ -35,5 +23,5 @@ end
 
 desc "Check codestyle and fix common errors"
 task :style do
-  Rake::Task["style:rubocop:with_auto_correct"].invoke
+  Rake::Task["style:rubocop:run"].invoke(true)
 end
