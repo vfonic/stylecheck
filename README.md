@@ -13,7 +13,7 @@ gem 'stylecheck', github: 'vfonic/stylecheck'
 Add this line to your `Rakefile`:
 
 ```ruby
-require 'rake_task'
+require 'stylecheck'
 ```
 
 ## Tasks
