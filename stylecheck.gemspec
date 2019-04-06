@@ -1,17 +1,21 @@
-Gem::Specification.new do |s|
-  s.name          = "stylecheck"
-  s.version       = "1.0.0"
-  s.summary       = "Automatic RuboCop style check"
-  s.description   = "Wraps rubocop for simple and consistent experience"
-  s.authors       = ["Grzesiek Kołodziejczyk", "Maciej Małecki", "Oskar Szrajer", "Piotr Marciniak", "Viktor Fonic"]
-  s.email         = "contact@ada-dev.com"
-  s.files         = Dir["{config,lib}/**/*", "MIT-LICENSE", "README.md", "./"]
-  s.homepage      = "https://github.com/vfonic/stylecheck"
-  s.license       = "MIT"
+# frozen_string_literal: true
 
-  s.add_dependency "rake"
-  s.add_dependency "rubocop-performance"
-  s.add_dependency "rubocop-rspec"
+Gem::Specification.new do |spec|
+  spec.name          = 'stylecheck'
+  spec.version       = '1.0.0'
 
-  s.add_development_dependency "bundler"
+  spec.authors       = ['Grzesiek Kołodziejczyk', 'Maciej Małecki', 'Oskar Szrajer', 'Piotr Marciniak', 'Viktor Fonic']
+  spec.summary       = 'Automatic RuboCop style check'
+  spec.description   = 'Wraps rubocop for simple and consistent experience'
+  spec.email         = 'contact@ada-dev.com'
+  spec.homepage      = 'https://github.com/vfonic/stylecheck'
+
+  spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
+  spec.require_paths = ['lib']
+
+  spec.add_dependency 'rake'
+  spec.add_dependency 'rubocop-performance'
+  spec.add_dependency 'rubocop-rspec'
+
+  spec.add_development_dependency 'bundler'
 end

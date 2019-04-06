@@ -1,5 +1,7 @@
-require "bundler"
-require "bundler/gem_tasks"
+# frozen_string_literal: true
+
+require 'bundler'
+require 'bundler/gem_tasks'
 Bundler.require
 
-require "rake_task"
+require 'rake_task'
