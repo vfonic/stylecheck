@@ -1,13 +1,9 @@
+# https://github.com/rubocop-hq/rubocop/blob/master/config/default.yml
 require: ['rubocop-performance', 'rubocop-rspec']
 
 AllCops:
   TargetRubyVersion: 2.5.3
   TargetRailsVersion: 5.2.3
-
-  # CLI arguments
-  DisplayCopNames: true
-  DisplayStyleGuide: true
-  ExtraDetails: true
 
   Exclude:
     - db/schema.rb
