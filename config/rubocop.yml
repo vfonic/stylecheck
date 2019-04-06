@@ -1,138 +1,46 @@
+require: ['rubocop-performance', 'rubocop-rspec']
+
 AllCops:
-  TargetRubyVersion: 2.6
+  TargetRubyVersion: 2.5.3
+  TargetRailsVersion: 5.2.3
+
+  # CLI arguments
   DisplayCopNames: true
+  DisplayStyleGuide: true
+  ExtraDetails: true
+
   Exclude:
     - db/schema.rb
-    - db/migrate/*
-    - bin/**
     - vendor/bundle/**/*
-    - node_modules/**/*
-
-##################### Layout ##################################
-
-Layout/AlignHash:
-  EnforcedHashRocketStyle: table
-  EnforcedColonStyle: table
-
-# Multi-line method chaining should be done with leading dots.
-Layout/DotPosition:
-  EnforcedStyle: trailing
-
-# Use empty lines between defs.
-Layout/EmptyLineBetweenDefs:
-  # If true, this parameter means that single line method definitions don't
-  # need an empty line between them.
-  AllowAdjacentOneLineDefs: true
-
-Layout/EmptyLines:
-  Exclude:
-    - Gemfile
-
-Layout/MultilineHashBraceLayout:
-  EnforcedStyle: symmetrical
-
-Layout/MultilineMethodCallIndentation:
-  EnforcedStyle: indented
-
-Layout/MultilineOperationIndentation:
-  EnforcedStyle: indented
-
-Layout/SpaceInLambdaLiteral:
-  EnforcedStyle: require_space
-
-##################### Lint ##################################
-
-# Allow logical `or`/`and` in conditionals
-
-Lint/AssignmentInCondition:
+Documentation:
   Enabled: false
-
-##################### Style ##################################
-
-Style/AndOr:
-  EnforcedStyle: conditionals
-
-Style/ClassAndModuleChildren:
-  Enabled: false
-
-Style/Documentation:
-  Enabled: false
-
-# Enforce the method used for string formatting.
-Style/FormatString:
-  Enabled: false
-
-Style/FrozenStringLiteralComment:
-  Enabled: false
-
-Style/RaiseArgs:
-  Enabled: false
-
-Style/StringLiterals:
-  EnforcedStyle: double_quotes
-  Exclude:
-    - Gemfile
-    - Rakefile
-
-Style/StringLiteralsInInterpolation:
-  EnforcedStyle: double_quotes
-
-Style/TrailingCommaInArrayLiteral:
-  Enabled: false
-
-Style/TrailingCommaInHashLiteral:
-  Enabled: false
-
-Style/PercentLiteralDelimiters:
-  PreferredDelimiters:
-    "%":  ()
-    "%i": ()
-    "%q": ()
-    "%Q": ()
-    "%r": "{}"
-    "%s": ()
-    "%w": ()
-    "%W": ()
-    "%x": ()
-
-Style/FormatStringToken:
-  EnforcedStyle: template
-
-##################### Metrics ##################################
-
-Metrics/AbcSize:
-  Severity: warning
-  Max: 25
-
+Layout/IndentationConsistency:
+  EnforcedStyle: rails
 Metrics/BlockLength:
-  Max: 30
+  Enabled: true
   Exclude:
-    - "spec/**/*.rb"
-    - "config/**/*.rb"
-
+    - spec/**/*_spec.rb
+    - Guardfile
 Metrics/LineLength:
   Max: 120
-  # To make it possible to copy or click on URIs in the code, we allow lines
-  # contaning a URI to be longer than Max.
-  AllowURI: true
-  URISchemes:
-    - http
-    - https
-
-Metrics/ParameterLists:
-  Max: 5
-  CountKeywordArgs: false
-
-##################### Rails ##################################
-
-Style/BlockDelimiters:
+  # ignore commented-out lines
+  IgnorePatterns: ['(\A|\s)#']
+Metrics/MethodLength:
+  Enabled: true
   Exclude:
-    - "spec/**/*"
-
-Lint/AmbiguousBlockAssociation:
-  Exclude:
-    - "spec/**/*.rb"
-    - "config/**/*.rb"
-
-Bundler/OrderedGems:
+    - db/migrate/**/*
+Rails:
+  Enabled: true
+RSpec/MultipleExpectations:
+  Max: 2
+RSpec/NamedSubject:
   Enabled: false
+RSpec/NestedGroups:
+  Max: 4
+Style/RedundantSelf:
+  Enabled: false
+Style/MixinUsage:
+  Enabled: true
+  Exclude:
+    - bin/setup
+    - bin/update
