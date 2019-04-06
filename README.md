@@ -1,4 +1,4 @@
-# Stylecheck
+# Stylecheck [![CircleCI](https://circleci.com/gh/vfonic/stylecheck.svg?style=svg&circle-token=1456797e032bbc052d99a3cd7f5cf45e84fb28e9)](https://circleci.com/gh/vfonic/stylecheck)
 
 This gem should streamline using RuboCop for style checking and linting.
 
