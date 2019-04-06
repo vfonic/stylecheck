@@ -5,7 +5,7 @@ require 'fileutils'
 
 namespace :style do
   namespace :rubocop do
-    desc 'Run RuboCop with auto_correct'
+    desc 'Run RuboCop'
     task :run, [:with_autocorrect] do |_task, args|
       options = ['-DRES', '-c', Stylecheck::RubocopHelpers.config]
       options << '--safe-auto-correct' if args[:with_autocorrect]
@@ -23,7 +23,7 @@ namespace :style do
   end
 end
 
-desc 'Check codestyle and fix common errors'
+desc 'Run RuboCop with autocorrect'
 task :style do
   Rake::Task['style:rubocop:run'].invoke(true)
 end

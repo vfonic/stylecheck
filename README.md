@@ -1,12 +1,39 @@
 # Stylecheck
 
-This gem should streamline using of rubocop and potentially other automated stylecheck tools.
+This gem should streamline using RuboCop for style checking and linting.
 
-# install
+## Install
 
-Just add to gemfile and new rake task should be available
-(if not add `require "rake_task"` to your Rakefile)
+Add this line to your `Gemfile` and run `bundle install`:
 
-* `bundle exec rake style`
+```ruby
+gem 'stylecheck', github: 'vfonic/stylecheck'
+```
 
-This for now just prepares a rubocop config and runs the rubocop check
+Add this line to your `Rakefile`:
+
+```ruby
+require 'rake_task'
+```
+
+## Tasks
+
+There are three Rake tasks added by the gem:
+
+### `rake style`
+
+Run RuboCop with autocorrect.
+
+Useful for local development.
+
+### `rake style:rubocop:run`
+
+Run RuboCop.
+
+Useful for running this task on CI. Does not perform autocorrect.
+
+### `rake style:rubocop:generate_local_config`
+
+Generate local RuboCop config.
+
+Useful for generating `rubocop.yml` config file for overriding RuboCop config options specified in stylecheck gem.
