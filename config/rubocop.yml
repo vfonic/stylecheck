@@ -23,8 +23,8 @@ Metrics/LineLength:
   IgnorePatterns: ['(\A|\s)#']
 Metrics/MethodLength:
   Enabled: true
-  Exclude:
-    - db/migrate/**/*
+  # exclude db migration methods
+  ExcludedMethods: ['change', 'up', 'down']
 Rails:
   Enabled: true
 RSpec/MultipleExpectations:
