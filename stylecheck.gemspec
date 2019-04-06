@@ -10,7 +10,8 @@ Gem::Specification.new do |s|
   s.license       = "MIT"
 
   s.add_dependency "rake"
-  s.add_dependency "rubocop"
+  s.add_dependency "rubocop-performance"
+  s.add_dependency "rubocop-rspec"
 
   s.add_development_dependency "bundler"
 end
