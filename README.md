@@ -7,13 +7,13 @@ This gem should streamline using RuboCop for style checking and linting.
 Add this line to your `Gemfile` and run `bundle install`:
 
 ```ruby
-gem 'stylecheck', github: 'vfonic/stylecheck'
+gem 'stylecheck', github: 'vfonic/stylecheck', require: false
 ```
 
 Add this line to your `Rakefile`:
 
 ```ruby
-require 'stylecheck'
+require 'stylecheck/rake_tasks'
 ```
 
 ## Tasks
