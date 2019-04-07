@@ -29,6 +29,12 @@ Metrics/MethodLength:
   ExcludedMethods: ['change', 'up', 'down']
 Rails:
   Enabled: true
+Rails/Date:
+  EnforcedStyle: strict
+Rails/SafeNavigation:
+  ConvertTry: true
+Rails/TimeZone:
+  EnforcedStyle: strict
 RSpec/MultipleExpectations:
   Max: 2
 RSpec/NamedSubject:
