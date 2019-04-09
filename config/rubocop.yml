@@ -41,10 +41,13 @@ RSpec/NamedSubject:
   Enabled: false
 RSpec/NestedGroups:
   Max: 4
-Style/RedundantSelf:
-  Enabled: false
+Style/Lambda:
+  Enabled: true
+  EnforcedStyle: 'literal'
 Style/MixinUsage:
   Enabled: true
   Exclude:
     - 'bin/setup'
     - 'bin/update'
+Style/RedundantSelf:
+  Enabled: false
