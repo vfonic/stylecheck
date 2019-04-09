@@ -19,6 +19,7 @@ namespace :style do
       template_config_path = Stylecheck::RubocopHelpers.template_config_path
       project_config_path = Stylecheck::RubocopHelpers.project_config_path
       FileUtils.cp(template_config_path, project_config_path)
+      puts 'Generated local rubocop configuration file at `config/rubocop.yml`'
     end
   end
 end
