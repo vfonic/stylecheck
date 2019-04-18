@@ -49,5 +49,8 @@ Style/MixinUsage:
   Exclude:
     - 'bin/setup'
     - 'bin/update'
+Style/NumericPredicate:
+  Enabled: true
+  EnforcedStyle: 'comparison'
 Style/RedundantSelf:
   Enabled: false
