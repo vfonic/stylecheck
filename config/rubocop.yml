@@ -2,8 +2,8 @@
 require: ['rubocop-performance', 'rubocop-rspec']
 
 AllCops:
-  TargetRubyVersion: 2.5.3
-  TargetRailsVersion: 5.2.3
+  TargetRubyVersion: 2.6
+  TargetRailsVersion: 5.2
 
   Exclude:
     - 'db/schema.rb'
@@ -41,6 +41,10 @@ RSpec/NamedSubject:
   Enabled: false
 RSpec/NestedGroups:
   Max: 4
+Style/CollectionMethods:
+  PreferredMethods:
+    find_all: 'filter'
+    select: 'filter'
 Style/Lambda:
   Enabled: true
   EnforcedStyle: 'literal'
