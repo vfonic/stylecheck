@@ -43,6 +43,8 @@ RSpec/NamedSubject:
   Enabled: false
 RSpec/NestedGroups:
   Max: 4
+Style/ClassAndModuleChildren:
+  Enabled: false
 Style/CollectionMethods:
   PreferredMethods:
     find_all: 'filter'
