@@ -37,6 +37,11 @@ Rails/SafeNavigation:
   ConvertTry: true
 Rails/TimeZone:
   EnforcedStyle: strict
+RSpec/DescribeClass:
+  Exclude:
+    - 'spec/features/*_spec.rb'
+RSpec/HookArgument:
+  EnforcedStyle: each
 RSpec/MultipleExpectations:
   Max: 2
 RSpec/NamedSubject:
