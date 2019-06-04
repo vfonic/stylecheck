@@ -32,6 +32,9 @@ Rails:
   Enabled: true
 Rails/Date:
   EnforcedStyle: strict
+Rails/FilePath:
+  Enabled: true
+  EnforcedStyle: slashes
 Rails/SafeNavigation:
   ConvertTry: true
 Rails/TimeZone:
