@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = 'stylecheck'
-  spec.version       = '2.0.0'
+  spec.version       = '2.0.1'
 
   spec.authors       = ['Grzesiek Kołodziejczyk', 'Maciej Małecki', 'Oskar Szrajer', 'Piotr Marciniak', 'Viktor Fonic']
   spec.summary       = 'Automatic RuboCop style check'
