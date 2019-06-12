@@ -1,8 +1,12 @@
 # frozen_string_literal: true
 
+lib = File.expand_path('lib', __dir__)
+$LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
+require 'stylecheck/version'
+
 Gem::Specification.new do |spec|
   spec.name          = 'stylecheck'
-  spec.version       = '2.0.1'
+  spec.version       = Stylecheck::VERSION
 
   spec.authors       = ['Grzesiek Kołodziejczyk', 'Maciej Małecki', 'Oskar Szrajer', 'Piotr Marciniak', 'Viktor Fonic']
   spec.summary       = 'Automatic RuboCop style check'

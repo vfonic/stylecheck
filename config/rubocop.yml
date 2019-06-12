@@ -52,6 +52,8 @@ RSpec/NamedSubject:
   Enabled: false
 RSpec/NestedGroups:
   Max: 4
+Style/Alias:
+  EnforcedStyle: prefer_alias_method
 Style/ClassAndModuleChildren:
   Enabled: false
 Style/CollectionMethods:
