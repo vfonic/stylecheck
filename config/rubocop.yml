@@ -3,7 +3,7 @@ require: ['rubocop-performance', 'rubocop-rails', 'rubocop-rspec']
 
 AllCops:
   TargetRubyVersion: 2.6
-  TargetRailsVersion: 5.2
+  TargetRailsVersion: 6.0
 
   Exclude:
     - 'db/schema.rb'
@@ -11,7 +11,7 @@ AllCops:
 Documentation:
   Enabled: false
 Layout/IndentationConsistency:
-  EnforcedStyle: rails
+  EnforcedStyle: indented_internal_methods
 Metrics/BlockLength:
   Enabled: true
   Exclude:
