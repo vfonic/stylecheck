@@ -6,29 +6,25 @@ jobs:
     - image: circleci/ruby:2.6.3-node
     steps:
     - checkout
+
     - run:
         name: Which bundler?
         command: bundle -v
+
     - restore_cache:
         keys:
-        - rails-backend-bundle-
+        - rails-backend-bundle-v2-{{ checksum "stylecheck.gemspec" }}
+        - rails-backend-bundle-v2-
+
     - run:
         name: Bundle Install
-        command: bundle install --clean --path vendor/bundle
+        command: bundle install --path vendor/bundle
+
     - save_cache:
-        key: rails-backend-bundle-
+        key: rails-backend-bundle-v2-{{ checksum "stylecheck.gemspec" }}
         paths:
         - vendor/bundle
+
     - run:
         name: Run RuboCop
-        command: bundle exec rubocop -DES
-    # - run:
-    #     name: Run rspec in parallel
-    #     command: |
-    #       bundle exec rspec --profile 10 \
-    #                         --format RspecJunitFormatter \
-    #                         --out test_results/rspec.xml \
-    #                         --format progress \
-    #                         $(circleci tests glob "spec/**/*_spec.rb" | circleci tests split --split-by=timings)
-    - store_test_results:
-        path: test_results
+        command: bundle exec rake style
