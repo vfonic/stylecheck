@@ -21,7 +21,7 @@ jobs:
         - vendor/bundle
     - run:
         name: Run RuboCop
-        command: bundle exec rubocop -DRES
+        command: bundle exec rubocop -DES
     # - run:
     #     name: Run rspec in parallel
     #     command: |
