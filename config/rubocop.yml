@@ -6,7 +6,7 @@ AllCops:
   TargetRailsVersion: 6.0
 
   Exclude:
-    - 'db/schema.rb'
+    - '**/schema.rb'
     - 'vendor/bundle/**/*'
 Documentation:
   Enabled: false
