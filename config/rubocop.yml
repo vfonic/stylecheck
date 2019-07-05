@@ -8,6 +8,9 @@ AllCops:
   Exclude:
     - 'db/**/*schema.rb'
     - 'vendor/bundle/**/*'
+    - 'node_modules/**/*'
+    - 'bin/webpack'
+    - 'bin/webpack-dev-server'
 Documentation:
   Enabled: false
 Layout/IndentationConsistency:
