@@ -8,6 +8,7 @@ AllCops:
   Exclude:
     - 'db/**/*schema.rb'
     - 'vendor/bundle/**/*'
+    - 'node_modules/**/*'
 Documentation:
   Enabled: false
 Layout/IndentationConsistency:
