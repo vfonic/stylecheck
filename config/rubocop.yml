@@ -45,6 +45,8 @@ Rails/TimeZone:
 RSpec/DescribeClass:
   Exclude:
     - 'spec/features/*_spec.rb'
+RSpec/DescribedClass:
+  EnforcedStyle: explicit
 RSpec/HookArgument:
   EnforcedStyle: each
 RSpec/MultipleExpectations:
