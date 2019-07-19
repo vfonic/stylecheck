@@ -18,7 +18,7 @@ Metrics/BlockLength:
   Exclude:
     - '*.gemspec'
     - 'Guardfile'
-    - 'spec/**/*.rb'
+    - '**/*_spec.rb'
 Metrics/LineLength:
   Max: 120
   # ignore commented-out lines
