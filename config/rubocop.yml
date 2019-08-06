@@ -3,10 +3,10 @@ require: ['rubocop-performance', 'rubocop-rails', 'rubocop-rspec']
 
 AllCops:
   TargetRubyVersion: 2.6
-  TargetRailsVersion: 6.0
+  TargetRailsVersion: 5.0
 
   Exclude:
-    - 'db/*schema.rb'
+    - '**/db/*schema.rb'
     - 'vendor/bundle/**/*'
     - 'node_modules/**/*'
 Documentation:
@@ -74,5 +74,8 @@ Style/MixinUsage:
 Style/NumericPredicate:
   Enabled: true
   EnforcedStyle: 'comparison'
+Style/PercentLiteralDelimiters:
+  PreferredDelimiters:
+    default: '{}'
 Style/RedundantSelf:
   Enabled: false
