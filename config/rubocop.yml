@@ -49,6 +49,8 @@ RSpec/DescribedClass:
   EnforcedStyle: explicit
 RSpec/HookArgument:
   EnforcedStyle: each
+RSpec/LeakyConstantDeclaration:
+  Enabled: false
 RSpec/MultipleExpectations:
   Max: 2
 RSpec/NamedSubject:
