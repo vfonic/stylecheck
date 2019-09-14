@@ -19,7 +19,7 @@ module Stylecheck
       end
 
       def project_config_path
-        File.join(Dir.pwd, 'config', 'rubocop.yml')
+        File.join(Dir.pwd, '.rubocop.yml')
       end
 
       def stylecheck_config_path
