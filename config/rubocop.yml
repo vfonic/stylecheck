@@ -102,6 +102,8 @@ Style/ReturnNil:
   Enabled: true
 Style/StringHashKeys:
   Enabled: true
+  Exclude:
+    - 'spec/**/*_spec.rb'
 Style/StringMethods:
   Enabled: true
 Style/TrailingCommaInArrayLiteral:
