@@ -11,10 +11,19 @@ AllCops:
     - 'node_modules/**/*'
 Documentation:
   Enabled: false
+Layout/ClassStructure:
+  Enabled: true
 Layout/EmptyLineBetweenDefs:
   Enabled: false
+Layout/FirstArrayElementLineBreak:
+  Enabled: true
+Layout/FirstHashElementLineBreak:
+  Enabled: true
 Layout/IndentationConsistency:
   EnforcedStyle: indented_internal_methods
+Layout/MultilineAssignmentLayout:
+  EnforcedStyle: same_line
+  Enabled: true
 Metrics/BlockLength:
   Enabled: true
   Exclude:
@@ -42,6 +51,8 @@ Rails/Output:
   Enabled: false
 Rails/SafeNavigation:
   ConvertTry: true
+Rails/SaveBang:
+  Enabled: true
 Rails/TimeZone:
   EnforcedStyle: strict
 RSpec/DescribeClass:
@@ -61,12 +72,16 @@ RSpec/NestedGroups:
   Max: 4
 Style/Alias:
   EnforcedStyle: prefer_alias_method
+Style/AutoResourceCleanup:
+  Enabled: true
 Style/ClassAndModuleChildren:
   Enabled: false
 Style/CollectionMethods:
   PreferredMethods:
     find_all: 'filter'
     select: 'filter'
+Style/ImplicitRuntimeError:
+  Enabled: true
 Style/Lambda:
   Enabled: true
   EnforcedStyle: 'literal'
@@ -83,6 +98,12 @@ Style/PercentLiteralDelimiters:
     default: '{}'
 Style/RedundantSelf:
   Enabled: false
+Style/ReturnNil:
+  Enabled: true
+Style/StringHashKeys:
+  Enabled: true
+Style/StringMethods:
+  Enabled: true
 Style/TrailingCommaInArrayLiteral:
   EnforcedStyleForMultiline: consistent_comma
 Style/TrailingCommaInHashLiteral:
