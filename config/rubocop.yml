@@ -11,6 +11,8 @@ AllCops:
     - 'node_modules/**/*'
 Documentation:
   Enabled: false
+Layout/EmptyLineBetweenDefs:
+  Enabled: false
 Layout/IndentationConsistency:
   EnforcedStyle: indented_internal_methods
 Metrics/BlockLength:
