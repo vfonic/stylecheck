@@ -9,8 +9,6 @@ AllCops:
     - '**/db/*schema.rb'
     - 'vendor/bundle/**/*'
     - 'node_modules/**/*'
-Documentation:
-  Enabled: false
 Layout/ClassStructure:
   Enabled: true
 Layout/EmptyLineBetweenDefs:
@@ -80,6 +78,8 @@ Style/CollectionMethods:
   PreferredMethods:
     find_all: 'filter'
     select: 'filter'
+Style/Documentation:
+  Enabled: false
 Style/ImplicitRuntimeError:
   Enabled: true
 Style/Lambda:
