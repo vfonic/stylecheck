@@ -88,8 +88,7 @@ Style/Lambda:
 Style/MixinUsage:
   Enabled: true
   Exclude:
-    - 'bin/setup'
-    - 'bin/update'
+    - 'bin/*'
 Style/NumericPredicate:
   Enabled: true
   EnforcedStyle: 'comparison'
