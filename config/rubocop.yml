@@ -9,8 +9,6 @@ AllCops:
     - '**/db/*schema.rb'
     - 'vendor/bundle/**/*'
     - 'node_modules/**/*'
-Layout/ClassStructure:
-  Enabled: true
 Layout/EmptyLineBetweenDefs:
   Enabled: false
 Layout/FirstArrayElementLineBreak:
