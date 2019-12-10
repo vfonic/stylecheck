@@ -99,11 +99,6 @@ Style/RedundantSelf:
   Enabled: false
 Style/ReturnNil:
   Enabled: true
-Style/StringHashKeys:
-  Enabled: true
-  Exclude:
-    - 'config/**/*routes.rb'
-    - 'spec/**/*_spec.rb'
 Style/StringMethods:
   Enabled: true
 Style/TrailingCommaInArrayLiteral:
