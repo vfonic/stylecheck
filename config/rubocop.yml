@@ -6,7 +6,7 @@ AllCops:
   TargetRailsVersion: 5.0
 
   Exclude:
-    - '**/db/*schema.rb'
+    - 'db/*schema.rb'
     - 'vendor/bundle/**/*'
     - 'node_modules/**/*'
 Layout/EmptyLineBetweenDefs:
@@ -102,6 +102,7 @@ Style/ReturnNil:
 Style/StringHashKeys:
   Enabled: true
   Exclude:
+    - 'config/**/*routes.rb'
     - 'spec/**/*_spec.rb'
 Style/StringMethods:
   Enabled: true
