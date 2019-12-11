@@ -1,0 +1,7 @@
+inherit_gem:
+  stylecheck: config/rubocop.yml
+
+AllCops:
+  TargetRubyVersion: 2.6
+Rails:
+  Enabled: false
