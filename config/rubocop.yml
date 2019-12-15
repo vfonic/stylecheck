@@ -84,6 +84,8 @@ Style/CollectionMethods:
   PreferredMethods:
     find_all: 'filter'
     select: 'filter'
+Style/CommentedKeyword:
+  Enabled: false
 Style/Documentation:
   Enabled: false
 Style/ImplicitRuntimeError:
