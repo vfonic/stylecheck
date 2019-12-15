@@ -1,5 +1,10 @@
 # https://github.com/rubocop-hq/rubocop/blob/master/config/default.yml
-require: ['database_validations/rubocop/cops', 'rubocop-performance', 'rubocop-rails', 'rubocop-rspec']
+require:
+  - 'database_validations/rubocop/cops'
+  - 'rubocop-performance'
+  - 'rubocop-rails'
+  - 'rubocop-rake'
+  - 'rubocop-rspec'
 
 AllCops:
   TargetRubyVersion: 2.6
