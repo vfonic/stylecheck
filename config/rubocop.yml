@@ -23,6 +23,10 @@ Layout/FirstHashElementLineBreak:
   Enabled: true
 Layout/IndentationConsistency:
   EnforcedStyle: indented_internal_methods
+Layout/LineLength:
+  Max: 120
+  # ignore commented-out lines
+  IgnoredPatterns: ['(\A|\s)#']
 Layout/MultilineAssignmentLayout:
   EnforcedStyle: same_line
   Enabled: true
@@ -32,10 +36,6 @@ Metrics/BlockLength:
     - '*.gemspec'
     - 'Guardfile'
     - '**/*_spec.rb'
-Metrics/LineLength:
-  Max: 120
-  # ignore commented-out lines
-  IgnoredPatterns: ['(\A|\s)#']
 Metrics/MethodLength:
   Enabled: true
   # exclude db migration methods
