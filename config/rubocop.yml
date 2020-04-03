@@ -94,8 +94,6 @@ Style/HashTransformKeys:
   Enabled: true
 Style/HashTransformValues:
   Enabled: true
-Style/ImplicitRuntimeError:
-  Enabled: true
 Style/Lambda:
   Enabled: true
   EnforcedStyle: 'literal'
