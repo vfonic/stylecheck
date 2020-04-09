@@ -59,6 +59,8 @@ Rails/SaveBang:
   Enabled: true
 Rails/TimeZone:
   EnforcedStyle: strict
+RSpec/AnyInstance:
+  Enabled: false
 RSpec/DescribeClass:
   Exclude:
     - 'spec/features/*_spec.rb'
