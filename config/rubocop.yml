@@ -28,7 +28,11 @@ Layout/LineLength:
   # ignore commented-out lines
   IgnoredPatterns: ['(\A|\s)#']
 Layout/MultilineAssignmentLayout:
+  Enabled: true
   EnforcedStyle: same_line
+Lint/RaiseException:
+  Enabled: true
+Lint/StructNewOverride:
   Enabled: true
 Metrics/BlockLength:
   Enabled: true
