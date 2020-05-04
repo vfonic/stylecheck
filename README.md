@@ -13,7 +13,7 @@ gem 'stylecheck', github: 'vfonic/stylecheck', require: false
 Add this line to your `Rakefile`:
 
 ```ruby
-require 'stylecheck/rake_tasks'
+require 'stylecheck/rake_tasks' unless Rails.env.production?
 ```
 
 ## Tasks
