@@ -44,7 +44,7 @@ Metrics/BlockLength:
 Metrics/MethodLength:
   Enabled: true
   # exclude db migration methods
-  ExcludedMethods: ['change', 'up', 'down']
+  IgnoredMethods: ['change', 'up', 'down']
 Naming/RescuedExceptionsVariableName:
   Enabled: false
 Rails:
