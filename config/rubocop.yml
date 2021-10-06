@@ -1,10 +1,10 @@
 # https://github.com/rubocop-hq/rubocop/blob/master/config/default.yml
 require:
-  - 'database_validations/rubocop/cops'
-  - 'rubocop-performance'
-  - 'rubocop-rails'
-  - 'rubocop-rake'
-  - 'rubocop-rspec'
+  - "database_validations/rubocop/cops"
+  - "rubocop-performance"
+  - "rubocop-rails"
+  - "rubocop-rake"
+  - "rubocop-rspec"
 
 AllCops:
   TargetRubyVersion: 2.6
@@ -12,10 +12,10 @@ AllCops:
   NewCops: enable
 
   Exclude:
-    - 'bin/**/*'
-    - 'db/*schema.rb'
-    - 'vendor/bundle/**/*'
-    - 'node_modules/**/*'
+    - "bin/**/*"
+    - "db/*schema.rb"
+    - "vendor/bundle/**/*"
+    - "node_modules/**/*"
 Layout/EmptyLineBetweenDefs:
   Enabled: false
 Layout/FirstArrayElementLineBreak:
@@ -38,13 +38,13 @@ Lint/StructNewOverride:
 Metrics/BlockLength:
   Enabled: true
   Exclude:
-    - '*.gemspec'
-    - 'Guardfile'
-    - '**/*_spec.rb'
+    - "*.gemspec"
+    - "Guardfile"
+    - "**/*_spec.rb"
 Metrics/MethodLength:
   Enabled: true
   # exclude db migration methods
-  IgnoredMethods: ['change', 'up', 'down']
+  IgnoredMethods: ["change", "up", "down"]
 Naming/RescuedExceptionsVariableName:
   Enabled: false
 Rails:
@@ -68,7 +68,7 @@ RSpec/AnyInstance:
   Enabled: false
 RSpec/DescribeClass:
   Exclude:
-    - 'spec/features/*_spec.rb'
+    - "spec/features/*_spec.rb"
 RSpec/DescribedClass:
   EnforcedStyle: explicit
 RSpec/HookArgument:
@@ -89,8 +89,8 @@ Style/ClassAndModuleChildren:
   Enabled: false
 Style/CollectionMethods:
   PreferredMethods:
-    find_all: 'filter'
-    select: 'filter'
+    find_all: "filter"
+    select: "filter"
 Style/CommentedKeyword:
   Enabled: false
 Style/Documentation:
@@ -103,17 +103,17 @@ Style/HashTransformValues:
   Enabled: true
 Style/Lambda:
   Enabled: true
-  EnforcedStyle: 'literal'
+  EnforcedStyle: "literal"
 Style/MixinUsage:
   Enabled: true
   Exclude:
-    - 'bin/*'
+    - "bin/*"
 Style/NumericPredicate:
   Enabled: true
-  EnforcedStyle: 'comparison'
+  EnforcedStyle: "comparison"
 Style/PercentLiteralDelimiters:
   PreferredDelimiters:
-    default: '{}'
+    default: "{}"
 Style/RedundantSelf:
   Enabled: false
 Style/ReturnNil:
