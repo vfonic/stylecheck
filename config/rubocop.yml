@@ -43,9 +43,9 @@ Metrics/BlockLength:
     - "**/*_spec.rb"
 Metrics/MethodLength:
   Enabled: true
-  # exclude db migration methods
-  IgnoredMethods: ["change", "up", "down"]
 Naming/RescuedExceptionsVariableName:
+  Enabled: false
+Performance/MethodObjectAsBlock:
   Enabled: false
 Rails:
   Enabled: true
@@ -120,7 +120,7 @@ Style/ReturnNil:
   Enabled: true
 Style/StringMethods:
   Enabled: true
-Style/TrailingCommaInArrayLiteral:
-  EnforcedStyleForMultiline: consistent_comma
 Style/TrailingCommaInHashLiteral:
+  EnforcedStyleForMultiline: consistent_comma
+Style/TrailingCommaInArrayLiteral:
   EnforcedStyleForMultiline: consistent_comma
