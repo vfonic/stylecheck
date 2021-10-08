@@ -87,6 +87,8 @@ RSpec/NestedGroups:
   Max: 4
 Style/Alias:
   EnforcedStyle: prefer_alias_method
+Style/ArgumentsForwarding:
+  Enabled: false
 Style/AutoResourceCleanup:
   Enabled: true
 Style/ClassAndModuleChildren:
