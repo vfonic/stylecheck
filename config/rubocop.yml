@@ -34,7 +34,7 @@ Layout/MultilineAssignmentLayout:
 Lint/MissingSuper:
   Enabled: true
   Exclude:
-    - "app/services/*"
+    - "app/services/**/*"
 Lint/RaiseException:
   Enabled: true
 Lint/StructNewOverride:
