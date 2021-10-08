@@ -31,6 +31,10 @@ Layout/LineLength:
 Layout/MultilineAssignmentLayout:
   Enabled: true
   EnforcedStyle: same_line
+Lint/MissingSuper:
+  Enabled: true
+  Exclude:
+    - "app/services/*"
 Lint/RaiseException:
   Enabled: true
 Lint/StructNewOverride:
