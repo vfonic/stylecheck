@@ -16,6 +16,8 @@ AllCops:
     - "db/*schema.rb"
     - "vendor/bundle/**/*"
     - "node_modules/**/*"
+Bundler/OrderedGems:
+  ConsiderPunctuation: true
 Layout/EmptyLineBetweenDefs:
   Enabled: false
 Layout/FirstArrayElementLineBreak:
@@ -55,6 +57,8 @@ Rails:
   Enabled: true
 Rails/Date:
   EnforcedStyle: strict
+Rails/EagerEvaluationLogMessage:
+  Enabled: false
 Rails/FilePath:
   Enabled: true
   EnforcedStyle: slashes
@@ -101,6 +105,9 @@ Style/CommentedKeyword:
   Enabled: false
 Style/Documentation:
   Enabled: false
+Style/FrozenStringLiteralComment:
+  Enabled: true
+  EnforcedStyle: always_true
 Style/HashEachMethods:
   Enabled: true
 Style/HashTransformKeys:
