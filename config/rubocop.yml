@@ -62,6 +62,8 @@ Rails/EagerEvaluationLogMessage:
 Rails/FilePath:
   Enabled: true
   EnforcedStyle: slashes
+Rails/IndexWith:
+  Enabled: false
 Rails/NotNullColumn:
   Enabled: false
 Rails/Output:
