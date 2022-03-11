@@ -103,6 +103,8 @@ Style/CollectionMethods:
   PreferredMethods:
     find_all: "filter"
     select: "filter"
+Style/CombinableLoops:
+  Enabled: false
 Style/CommentedKeyword:
   Enabled: false
 Style/Documentation:
