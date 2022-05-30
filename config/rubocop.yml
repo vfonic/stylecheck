@@ -16,6 +16,8 @@ AllCops:
     - "db/*schema.rb"
     - "vendor/bundle/**/*"
     - "node_modules/**/*"
+    - "tmp/**/*"
+    - "log/**/*"
 Bundler/OrderedGems:
   ConsiderPunctuation: true
 Layout/EmptyLineBetweenDefs:
