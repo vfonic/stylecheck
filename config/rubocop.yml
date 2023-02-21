@@ -7,7 +7,7 @@ require:
   - "rubocop-rspec"
 
 AllCops:
-  TargetRubyVersion: 3.1.1
+  TargetRubyVersion: 3.1.2
   TargetRailsVersion: 6.0
   NewCops: enable
 
@@ -29,7 +29,7 @@ Layout/FirstHashElementLineBreak:
 Layout/IndentationConsistency:
   EnforcedStyle: indented_internal_methods
 Layout/LineLength:
-  Max: 120
+  Max: 140
   # ignore commented-out lines
   AllowedPatterns: ['(\A|\s)#']
 Layout/MultilineAssignmentLayout:
