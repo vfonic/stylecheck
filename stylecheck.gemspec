@@ -26,6 +26,5 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'rubocop-rake'
   spec.add_dependency 'rubocop-rspec'
 
-  spec.add_development_dependency 'bundler'
   spec.metadata['rubygems_mfa_required'] = 'true'
 end
