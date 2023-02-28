@@ -5,3 +5,5 @@ require 'bundler/gem_tasks'
 Bundler.require
 
 require 'stylecheck/rake_tasks'
+
+task default: :style

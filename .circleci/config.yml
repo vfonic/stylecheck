@@ -3,28 +3,28 @@ version: 2
 jobs:
   build:
     docker:
-    - image: circleci/ruby:2.6.3-node
+      - image: cimg/ruby:3.1.2
     steps:
-    - checkout
+      - checkout
 
-    - run:
-        name: Which bundler?
-        command: bundle -v
+      - run:
+          name: Which bundler?
+          command: bundle -v
 
-    - restore_cache:
-        keys:
-        - rails-backend-bundle-v2-{{ checksum "stylecheck.gemspec" }}
-        - rails-backend-bundle-v2-
+      - restore_cache:
+          keys:
+            - rails-backend-bundle-v2-{{ checksum "stylecheck.gemspec" }}
+            - rails-backend-bundle-v2-
 
-    - run:
-        name: Bundle Install
-        command: bundle install --path vendor/bundle
+      - run:
+          name: Bundle Install
+          command: bundle install --path vendor/bundle
 
-    - save_cache:
-        key: rails-backend-bundle-v2-{{ checksum "stylecheck.gemspec" }}
-        paths:
-        - vendor/bundle
+      - save_cache:
+          key: rails-backend-bundle-v2-{{ checksum "stylecheck.gemspec" }}
+          paths:
+            - vendor/bundle
 
-    - run:
-        name: Run RuboCop
-        command: bundle exec rake style
+      - run:
+          name: Run RuboCop
+          command: bundle exec rake style

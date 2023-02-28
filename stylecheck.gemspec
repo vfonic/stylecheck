@@ -5,7 +5,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'stylecheck/version'
 
 Gem::Specification.new do |spec|
-  spec.required_ruby_version = '>= 2.6.0'
+  spec.required_ruby_version = '>= 3.0'
   spec.name          = 'stylecheck'
   spec.version       = Stylecheck::VERSION
 
