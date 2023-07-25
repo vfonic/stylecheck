@@ -5,7 +5,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'stylecheck/version'
 
 Gem::Specification.new do |spec|
-  spec.required_ruby_version = '>= 3.0'
+  spec.required_ruby_version = '>= 3.1'
   spec.name          = 'stylecheck'
   spec.version       = Stylecheck::VERSION
 
@@ -21,6 +21,7 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'database_validations'
   spec.add_dependency 'rake'
   spec.add_dependency 'rubocop'
+  spec.add_dependency 'rubocop-factory_bot'
   spec.add_dependency 'rubocop-performance'
   spec.add_dependency 'rubocop-rails'
   spec.add_dependency 'rubocop-rake'

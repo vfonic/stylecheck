@@ -8,7 +8,7 @@ require:
 
 AllCops:
   TargetRubyVersion: 3.1.2
-  TargetRailsVersion: 6.0
+  TargetRailsVersion: 6.1
   NewCops: enable
 
   Exclude:
@@ -112,8 +112,7 @@ Style/CommentedKeyword:
 Style/Documentation:
   Enabled: false
 Style/FrozenStringLiteralComment:
-  Enabled: true
-  EnforcedStyle: always_true
+  Enabled: false
 Style/HashEachMethods:
   Enabled: true
 Style/HashTransformKeys:
