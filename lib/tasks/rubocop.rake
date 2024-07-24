@@ -7,7 +7,7 @@ namespace :style do
   namespace :rubocop do
     desc 'Run RuboCop'
     task :run, [:with_autocorrect] do |_task, args|
-      options = ['-DES', '-c', Stylecheck::RubocopHelpers.config]
+      options = ['--display-time', '-DES', '-c', Stylecheck::RubocopHelpers.config]
       options << '-A' if args[:with_autocorrect]
       sh "bundle exec rubocop #{options.join(' ')}" do |ok, _res|
         abort 'Fix code style errors' unless ok
