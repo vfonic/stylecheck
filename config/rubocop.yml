@@ -9,8 +9,8 @@ require:
   - "rubocop-rspec_rails"
 
 AllCops:
-  TargetRubyVersion: 3.1.2
-  TargetRailsVersion: 6.1
+  TargetRubyVersion: 3.3
+  TargetRailsVersion: 7.1
   NewCops: enable
 
   Exclude:
@@ -138,6 +138,8 @@ Style/RedundantSelf:
   Enabled: false
 Style/ReturnNil:
   Enabled: true
+Style/StringLiterals:
+  EnforcedStyle: double_quotes
 Style/StringMethods:
   Enabled: true
 Style/TrailingCommaInHashLiteral:

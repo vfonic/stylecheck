@@ -1,3 +1,3 @@
 # frozen_string_literal: true
 
-load 'tasks/rubocop.rake'
+load "tasks/rubocop.rake"

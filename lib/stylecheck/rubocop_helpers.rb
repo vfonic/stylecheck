@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require 'fileutils'
+require "fileutils"
 
 module Stylecheck
   # helper to nicely update rubocop config
@@ -19,15 +19,15 @@ module Stylecheck
       end
 
       def project_config_path
-        File.join(Dir.pwd, '.rubocop.yml')
+        File.join(Dir.pwd, ".rubocop.yml")
       end
 
       def stylecheck_config_path
-        File.join(Stylecheck.root, 'config', 'rubocop.yml')
+        File.join(Stylecheck.root, "config", "rubocop.yml")
       end
 
       def template_config_path
-        File.join(Stylecheck.root, 'lib', 'templates', 'rubocop.yml')
+        File.join(Stylecheck.root, "lib", "templates", "rubocop.yml")
       end
     end
   end
