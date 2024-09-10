@@ -57,6 +57,8 @@ Naming/RescuedExceptionsVariableName:
   Enabled: false
 Performance/MethodObjectAsBlock:
   Enabled: false
+Performance/RedundantMerge:
+  Enabled: false
 Rails:
   Enabled: true
 Rails/Date:
