@@ -33,7 +33,7 @@ Layout/IndentationConsistency:
 Layout/LineLength:
   Max: 140
   # ignore commented-out lines
-  AllowedPatterns: ['(\A|\s)#']
+  AllowedPatterns: ['^(\A|\s)#']
 Layout/MultilineAssignmentLayout:
   Enabled: true
   EnforcedStyle: same_line
