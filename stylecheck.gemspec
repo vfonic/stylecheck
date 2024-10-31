@@ -22,6 +22,7 @@ Gem::Specification.new do |spec|
   spec.add_dependency "rake"
   spec.add_dependency "rubocop"
   spec.add_dependency "rubocop-factory_bot"
+  spec.add_dependency "rubocop-obsession"
   spec.add_dependency "rubocop-performance"
   spec.add_dependency "rubocop-rails"
   spec.add_dependency "rubocop-rake"

@@ -2,6 +2,7 @@
 require:
   - "database_validations/rubocop/cops"
   - "rubocop-factory_bot"
+  - "rubocop-obsession"
   - "rubocop-performance"
   - "rubocop-rails"
   - "rubocop-rake"
