@@ -8,7 +8,7 @@ namespace :style do
     desc "Run RuboCop"
     task :run, [:with_autocorrect] do |_task, args|
       options = ["--display-time", "-DES", "-c", Stylecheck::RubocopHelpers.config]
-      if args[:with_autocorrect]
+      if args[:with_autocorrect] # rubocop:disable Style/ConditionalAssignment
         options << "-A"
       else
         options << "-f github"

@@ -1,6 +1,5 @@
 # https://github.com/rubocop-hq/rubocop/blob/master/config/default.yml
 require:
-  - "database_validations/rubocop/cops"
   - "rubocop-factory_bot"
   - "rubocop-obsession"
   - "rubocop-performance"
