@@ -1,12 +1,13 @@
 # https://github.com/rubocop-hq/rubocop/blob/master/config/default.yml
+plugins:
+  - rubocop-factory_bot
+  - rubocop-performance
+  - rubocop-rails
+  - rubocop-rake
+  - rubocop-rspec
+  - rubocop-rspec_rails
 require:
-  - "rubocop-factory_bot"
-  - "rubocop-obsession"
-  - "rubocop-performance"
-  - "rubocop-rails"
-  - "rubocop-rake"
-  - "rubocop-rspec"
-  - "rubocop-rspec_rails"
+  - rubocop-obsession
 
 AllCops:
   TargetRubyVersion: 3.4
